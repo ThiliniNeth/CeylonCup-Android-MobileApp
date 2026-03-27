@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".locationActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font2"
+        android:text="Thank You for Purchasing from us!"
+        android:textColor="@color/red"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="22dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font1"
+        android:text="Your Order is one the way.. Track your Package"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="287dp"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="265dp"
+        android:layout_height="66dp"
+        android:max="5"
+        android:progress="1"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="360dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="227dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#801212"
+        android:text="Track Order"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="466dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

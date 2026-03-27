@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- ScrollView with a LinearLayout wrapper -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Search View -->
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:focusable="false"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search..."
+                app:searchHintIcon="@null" />
+
+            <!-- Grid Layout for Categories -->
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="15dp"
+                android:rowCount="2">
+
+                <!-- Green Tea Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/greenTeaCategoryCard"
+                    android:layout_width="115dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="8dp"
+                            android:text="Green Tea"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Yellow Tea Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/yellowTeaCategoryCard"
+                    android:layout_width="115dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/yellow" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="8dp"
+                            android:text="Yellow Tea"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- White Tea Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/whiteTeaCategoryCard"
+                    android:layout_width="115dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="8dp"
+                            android:text="White Tea"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- White Tea Card -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/blackTeaCategoryCard"
+                    android:layout_width="115dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:padding="8dp"
+                            android:text="Black Tea"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Product List -->
+
+            <!-- RecyclerView for Dynamic Products -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

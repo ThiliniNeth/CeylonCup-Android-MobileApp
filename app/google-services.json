@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963918623550",
+    "project_id": "ceyloncup-d5543",
+    "storage_bucket": "ceyloncup-d5543.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963918623550:android:9e1af42a305fd97154726f",
+        "android_client_info": {
+          "package_name": "lk.javainstitute.ceyloncup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgum6jr6kQk_b1jfuoHT_5ktrVzGh9ROc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
